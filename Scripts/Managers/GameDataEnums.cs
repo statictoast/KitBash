@@ -1,0 +1,150 @@
+﻿public enum ENEMY_EVENT
+{
+    HIT,
+    DIE,
+}
+
+public enum PLAYER_EVENT
+{
+    HIT_GROUND,
+    EXIT_GROUND,
+    HIT_WALL,
+    EXIT_WALL,
+}
+
+public enum INPUT_STATE
+{
+    UP,
+    PRESS,
+    HOLD
+}
+
+public enum SLICE_LOCK_AXIS
+{
+    X,
+    Y
+}
+
+public enum ROUND_PLACE
+{
+    TENTHS = 10,
+    HUNDREDS = 100,
+    THOUSANDS = 1000,
+    TEN_THOUSANDS = 10000,
+    HUNDRED_THOUSANDS = 100000,
+    MILLIONS = 1000000
+}
+
+public enum VertexType
+{
+    INPUT_VERTEX,
+    SEGMENT_VERTEX,
+    FREE_VERTEX,
+    DEAD_VERTEX,
+    UNDEAD_VERTEX
+};
+
+public enum THREE_POINT_ORIENTATION
+{
+    COLINEAR,
+    CLOCKWISE,
+    COUNTER_CLOCKWISE
+}
+
+public enum ACTION_DIRECTION
+{
+    NONE,
+    UP,
+    DOWN,
+    SIDE
+}
+
+public enum PLAYER_ACTION_TYPES
+{
+    JUMP,
+    PRIMARY,
+    SECONDARY,
+    DODGE,
+    MAGIC,
+    SPECIAL_ONE,
+    SPECIAL_TWO,
+    PROJECTILE
+}
+
+public enum PLAYER_PROJECTILE_TYPE
+{
+    BASIC = 0,
+    MIN_CHARGE = 1,
+    MAX_CHARGE = 2
+}
+
+public enum FX_ATTACH_TYPE
+{
+    POINT,
+    POINT_FACE_WITH_PARENT,
+    PARENT,
+    PARENT_WITH_OFFSET
+}
+
+public enum ENEMY_MOVEMENT_TYPE
+{
+    STATIONARY,
+    MOVE_FOWARD,
+    STAY_ON_PLATFORM,
+    FOLLOW_PLAYER,
+    RETURN_TO_START,
+    PATROL
+}
+
+public enum AGGRO_DISTANCE_TYPE
+{
+    RADIAL,
+    X_ONLY,
+    Y_ONLY,
+    BOX
+}
+
+public enum LAVAFALL_PHASE
+{
+    FALLING,
+    FULL,
+    DIMINISHING,
+    COOLDOWN
+}
+
+public enum LAVAFALL_CONTROL_TYPE
+{
+    TIMER,
+    TRIGGER
+}
+
+public enum PICKUP_TYPE
+{
+    HEALTH,
+    WEAPON_ENERGY
+}
+
+public enum TRIGGER_SOURCE_TYPE
+{
+    PLAYER_HIT,
+    TRIGGER_VOLUME
+}
+
+public enum ENEMY_STARTING_DIRECTION
+{
+    LEFT,
+    RIGHT
+}
+
+public enum COUNTDOWN_TIMER_STATE
+{
+    DONE,
+    ACTIVE,
+    PAUSE
+}
+
+public enum PROJECTILE_SPAWNER_TYPE
+{
+    FREQUENCY,
+    PROXIMITY
+}

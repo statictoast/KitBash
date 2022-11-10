@@ -1,0 +1,46 @@
+<GameEvents>
+    <Event name="StickyWallCollision">
+        <parameter name="isContacting" type="bool" />
+    </Event>
+
+    <Event name="PlayerFinishedDying">
+        <parameter name="callback" type="Action" />
+    </Event>
+    
+    <Event name="PlayerDied" />
+    
+    <Event name="MouseStateChanged">
+        <parameter name="mouseIndex" type="int" />
+        <parameter name="prevState" type="INPUT_STATE" />
+        <parameter name="newState" type="INPUT_STATE" />
+    </Event>
+    
+    <Event name="ProjectileHitEntity">
+        <parameter name="projectile" type="GameObject" />
+        <parameter name="entity" type="GameObject" />
+    </Event>
+    
+    <Event name="PlayerHealthSet">
+        <parameter name="health" type="int" />
+    </Event>
+    
+    <Event name="PlayerHealthChange">
+        <parameter name="oldHealth" type="int" />
+        <parameter name="newHealth" type="int" />
+    </Event>
+
+    <Event name="StartFadeOut">
+        <parameter name="callback" type="Action" />
+    </Event>
+    <Event name="FadeOutComplete" />
+    
+    <Event name="StartFadeIn">
+        <parameter name="callback" type="Action" />
+    </Event>
+    <Event name="FadeInComplete" />
+
+    <Event name="ActiveCameraChanged" requires="Cinemachine">
+        <parameter name="newCamera" type="ICinemachineCamera" />
+    </Event>
+    
+</GameEvents>
